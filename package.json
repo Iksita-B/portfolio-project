@@ -1,0 +1,9 @@
+{
+  "name": "portfolio-project",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": ["client", "server"],
+  "scripts": {
+    "dev": "concurrently \"npm run dev --workspace=server\" \"npm start --workspace=client\""
+  }
+}
