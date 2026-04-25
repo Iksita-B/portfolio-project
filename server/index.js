@@ -20,6 +20,10 @@ app.get('/', (req, res) => {
   res.send('API is running...');
 });
 
+app.get('/api/test', (req, res) => {
+  res.send('API route works');
+});
+
 const PORT = process.env.PORT || 5001;
 
 app.listen(PORT, () => {
